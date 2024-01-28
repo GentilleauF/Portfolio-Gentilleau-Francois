@@ -41,19 +41,19 @@ const Navbar = () => {
         </li>
 
         <li className="mx-4 my-6 lg:my-0">
-          <a href="/Galerie" className="hover:text-cyan-500 duration-500">DIPLOMES</a>
+          <a href="/" className="hover:text-cyan-500 duration-500">DIPLOMES</a>
         </li>
 
         <li className="mx-4 my-6 lg:my-0">
-          <a href="/Evenements" className=" hover:text-cyan-500 duration-500">COMPETENCES</a>
+          <a href="#Skills" className=" hover:text-cyan-500 duration-500">COMPETENCES</a>
         </li>
 
         <li className="mx-4 my-6 lg:my-0">
-          <a href="/Contact" className=" hover:text-cyan-500 duration-500">EXPERIENCE</a>
+          <a href="#Experience" className=" hover:text-cyan-500 duration-500">EXPERIENCE</a>
         </li>
 
         <li className="mx-4 my-6 lg:my-0">
-          <a href="/Contact" className=" hover:text-cyan-500 duration-500">CONTACT</a>
+          <a href="#Portfolio" className=" hover:text-cyan-500 duration-500">PROJETS</a>
         </li>
       </ul>
     </nav>
