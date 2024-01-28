@@ -3,7 +3,7 @@
 
 # Dependances  
 Tailwind  
-HeroicIcons (npm install @heroicons/react)  
+HeroicIcons ( npm install @heroicons/react )  
 
   
 
