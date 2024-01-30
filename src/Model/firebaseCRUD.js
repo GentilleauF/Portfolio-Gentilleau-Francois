@@ -15,8 +15,15 @@ const createData = async (title, author) => {
 };
 
 //READ DATA
-const readData = async () => {
-    const q = query(collection(db, 'experiences'), orderBy('location', 'desc'));
+const readDataOrdered = async (tabName) => {
+  const q = query(collection(db, tabName), orderBy('id', 'desc'));
+  const querySnapshot = await getDocs(q);
+  const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  return data;
+};
+
+const readData = async (tabName) => {
+  const q = query(collection(db, tabName));
   const querySnapshot = await getDocs(q);
   const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
   return data;

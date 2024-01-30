@@ -5,14 +5,14 @@ import { readData } from "../Model/firebaseCRUD";
 const Experience = () => {
   const [experiences, setExperiences] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await readData();
-      setExperiences(data);
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await readData('experiences');
+  //     setExperiences(data);
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     <div
