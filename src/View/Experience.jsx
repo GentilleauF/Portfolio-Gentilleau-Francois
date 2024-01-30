@@ -16,7 +16,7 @@ const Experience = () => {
 
   return (
     <div
-      className="flex text-white flex-col bg-slate-900 min-h-screen p-16"
+      className="flex text-white flex-col min-h-screen p-16"
       id="Experience"
     >
       <h2 className="text-center text-4xl font-semibold py-10">

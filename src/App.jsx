@@ -9,11 +9,11 @@ import Portfolio from "./View/Portfolio";
 
 function App() {
   return (
-    <>
+    <main className="font-montserrat">
       <Navbar />
-      <div className="flex flex-row">
+      <div className=" flex flex-row">
         <SideBar />
-        <div className="flex flex-col lg:ml-20">
+        <div className="flex flex-col lg:ml-20 bg-bgColor">
           <HeroBanner />
           <WhoAmI />
           <Skills/>
@@ -21,7 +21,7 @@ function App() {
           <Portfolio/>
         </div>
       </div>
-    </>
+    </main>
   );
 }
 

@@ -1,6 +1,6 @@
 const WhoAmI = () => {
   return (
-    <div className="flex flex-col bg-slate-900 min-h-screen p-16" id="WhoAmI">
+    <div className="flex flex-col  min-h-screen p-16" id="WhoAmI">
       <h2 className="text-white text-center text-4xl font-semibold">Qui suis je?</h2>
       <div className="flex flex-row">
         <p className=" text-white overflow-auto text-justify w-[65%] px-5 pr-20 py-10">

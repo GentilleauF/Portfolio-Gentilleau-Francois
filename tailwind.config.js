@@ -10,6 +10,12 @@ export default {
         'montserrat': ['Montserrat'],
         'epilogue':['Epilogue']
       },
+      colors: {
+        'bgColor' : '#111927',
+        'blueprimary' : '#70b8ff',
+        'bluesecondary' : '#0086ed',
+        'bluePic' : '#',
+      }
     },
   },
   plugins: [],
