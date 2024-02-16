@@ -1,6 +1,6 @@
 import { MapPinIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import { readDataOrdered } from "../Model/firebaseCRUD";
+import { readData, readDataOrdered } from "../Model/firebaseCRUD";
 
 const Experience = () => {
   const [experiences, setExperiences] = useState([]);

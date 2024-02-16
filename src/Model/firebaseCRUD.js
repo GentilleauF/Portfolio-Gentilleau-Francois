@@ -16,7 +16,7 @@ const createData = async (title, author) => {
 
 //READ DATA
 const readDataOrdered = async (tabName) => {
-  const q = query(collection(db, tabName), orderBy('id', 'desc'));
+  const q = query(collection(db, tabName), orderBy('idOrder'));
   const querySnapshot = await getDocs(q);
   const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
   return data;
@@ -30,11 +30,11 @@ const readData = async (tabName) => {
 };
 
 //READ SKILLS
-const readSkills= async (tabName) => {
+const readSkills= async (tabName, filter) => {
   const q = query(collection(db, tabName));
   const querySnapshot = await getDocs(q);
   const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-  const skills = data.filter(skill => skill.type === 'framework');
+  const skills = data.filter(skill => skill.type === filter);
   return skills;
 };
 
