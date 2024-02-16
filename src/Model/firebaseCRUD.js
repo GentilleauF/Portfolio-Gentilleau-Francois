@@ -29,6 +29,17 @@ const readData = async (tabName) => {
   return data;
 };
 
+//READ SKILLS
+const readSkills= async (tabName) => {
+  const q = query(collection(db, tabName));
+  const querySnapshot = await getDocs(q);
+  const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+  const skills = data.filter(skill => skill.type === 'framework');
+  return skills;
+};
+
+
+
 //DELETE DATA
 const deleteData = async (id) => {
   await deleteDoc(doc(db, 'articles', id));
@@ -41,4 +52,4 @@ const updateData = async (id, newData) => {
   console.log('Document updated with ID: ', id);
 };
 
-export { createData, readData, deleteData, updateData };
+export { createData, readData, deleteData, updateData, readDataOrdered, readSkills};

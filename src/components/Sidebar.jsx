@@ -1,7 +1,7 @@
 const SideBar = () => {
   return (
-    <div>
-      <div className=" hidden lg:block fixed left-0 top-0 bottom-0 w-20 bg-white">
+ 
+      <div className=" hidden lg:block fixed left-0 top-0 bottom-0 w-20 bg-slate-800">
         <div className="flex flex-col justify-center items-center h-full">
           <a href="https://www.linkedin.com/in/francois-gentilleau-b09602293/" target="_blank">
             <img
@@ -28,7 +28,7 @@ const SideBar = () => {
           </a>
         </div>
       </div>
-    </div>
+
   );
 };
 

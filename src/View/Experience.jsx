@@ -1,28 +1,28 @@
 import { MapPinIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import { readData } from "../Model/firebaseCRUD";
+import { readDataOrdered } from "../Model/firebaseCRUD";
 
 const Experience = () => {
   const [experiences, setExperiences] = useState([]);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await readData('experiences');
-  //     setExperiences(data);
-  //   };
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await readDataOrdered('experiences');
+      setExperiences(data);
+    };
 
-  //   fetchData();
-  // }, []);
+    fetchData();
+  }, []);
 
   return (
     <div
-      className="flex text-white flex-col min-h-screen p-16"
+      className="flex text-white flex-col p-16"
       id="Experience"
     >
       <h2 className="text-center text-4xl font-semibold py-10">
         Expérience professionnelle
       </h2>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-10">
         {console.log(experiences)}
         {experiences.map((experience) => (
           <div key={experience.id} className="bg-slate-600 rounded-sm p-4">

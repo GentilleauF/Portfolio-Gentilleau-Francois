@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" font-montserrat p-3 bg-white shadow lg:flex lg:items-center lg:justify-between lg:px-20">
+    <nav className=" font-montserrat p-3 bg-bgColor text-white shadow lg:flex lg:items-center lg:justify-between lg:px-20">
       <div className="flex justify-between items-center ">
         <a href="/">
           <img className="w-14" src="/icons/Logo.png" alt="Logo" />
@@ -32,7 +32,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={` font-medium lg:flex lg:items-center z-[1] lg:z-auto lg:static absolute bg-white w-full left-0 lg:w-auto lg:py-0 lg:space-x-10 py-4 lg:pl-0 pl-7 lg:opacity-100 ${
+        className={` font-medium lg:flex lg:items-center z-[1] lg:z-auto lg:static absolute w-full left-0 lg:w-auto lg:py-0 lg:space-x-10 py-4 lg:pl-0 pl-7 lg:opacity-100 ${
           isMenuOpen ? "opacity-100 top-[80px]" : "opacity-0 top-[-400px]"
         } transition-all ease-in duration-200`}
       >
