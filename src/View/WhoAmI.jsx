@@ -1,9 +1,9 @@
 const WhoAmI = () => {
   return (
-    <div className="flex flex-col mt-20 p-16" id="WhoAmI">
-      <h2 className="text-white text-center text-4xl font-semibold">Qui suis je?</h2>
-      <div className="flex flex-row">
-        <p className=" text-white overflow-auto text-justify w-[65%] px-5 pr-20 py-10">
+    <div className="flex flex-col mt-20 p-5 md:p-16 text-slate-200" id="WhoAmI">
+      <h2 className=" text-center text-4xl font-semibold">Qui suis je?</h2>
+      <div className="flex flex-col md:flex-row">
+        <p className="  overflow-auto text-justify md:w-[70%] px-5 md:pr-20 py-10">
           Bonjour et bienvenue sur mon portfolio ! Je m'appelle François Gentilleau, j'ai 28 ans et je suis passionné par le développement d'applications. Actuellement sur Toulouse, j'ai toujours été attiré par le monde de la technologie et de l'ingénierie.
           <br />
           <br />
@@ -19,23 +19,8 @@ const WhoAmI = () => {
           <br />
           N'hésitez pas à explorer mon portfolio pour en savoir plus sur mes réalisations et à me contacter si vous souhaitez discuter d'une collaboration ou d'un projet passionnant !
         </p>
-        <div className="grid grid-cols-2 grid-rows-3 gap-4 w-[35%] py-10 ">
-          <img
-            className="row-start-1"
-            src="/icons/photoTest.jpg"
-            alt="photo bio 1"
-          />
-          <img
-            className="row-start-2 col-start-2"
-            src="/icons/photoTest.jpg"
-            alt="photo bio 2"
-          />
-          <img
-            className="row-start-3"
-            src="/icons/photoTest.jpg"
-            alt="photo bio 3"
-          />
-        </div>
+
+        <img className="text-white" src="/public/icons/devWork.svg" alt="ero" />
       </div>
     </div >
   );

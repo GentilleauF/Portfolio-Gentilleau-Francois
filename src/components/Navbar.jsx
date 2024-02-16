@@ -49,7 +49,7 @@ const Navbar = () => {
         </li>
 
         <li className="mx-4 my-6 lg:my-0">
-          <a href="#Experience" className=" hover:text-cyan-500 duration-500">EXPERIENCE</a>
+          <a href="#Experience" className=" hover:text-cyan-500 duration-500">EXPERIENCES</a>
         </li>
 
         <li className="mx-4 my-6 lg:my-0">
