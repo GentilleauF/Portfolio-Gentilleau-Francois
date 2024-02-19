@@ -1,6 +1,6 @@
 const HeroBanner = () => {
     return (
-        <div className="flex flex-col-reverse lg:flex-row justify-around pt-10 ">
+        <div className="flex flex-col-reverse lg:min-h-[75vh] lg:flex-row justify-around pt-10 ">
             <div className="flex flex-col mt-10 p-10 text-white ">
                 <h1 className="text-xl mb-3"> 👋 Bonjour, Je suis GENTILLEAU François</h1>
                 <h2 className="text-6xl font-semibold text-blueprimary mb-6">Web <br /> Developer</h2>
