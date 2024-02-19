@@ -22,8 +22,7 @@ const Experience = () => {
       <h2 className="text-center text-4xl font-semibold py-10">
         Expérience professionnelle
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-10">
-        {console.log(experiences)}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-10">
         {experiences.map((experience) => (
           <div key={experience.id} className="bg-slate-600 rounded-sm p-4">
             <p>{experience.date}</p>

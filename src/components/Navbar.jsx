@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className=" font-montserrat p-3 bg-bgColor text-white shadow lg:flex lg:items-center lg:justify-between lg:px-20">
       <div className="flex justify-between items-center ">
         <a href="/">
-          <img className="w-14" src="/icons/Logo.png" alt="Logo" />
+          <img className="w-14" src="/icons/Logo.png" alt="Logo"/>
         </a>
         <span className="text-xl pl-2 font-bold cursor-pointer">
           <a href="/">GENTILLEAU François</a>
@@ -33,8 +33,8 @@ const Navbar = () => {
 
       <ul
         className={` font-medium lg:flex lg:items-center z-[1] lg:z-auto lg:static absolute w-full left-0 lg:w-auto lg:py-0 lg:space-x-10 py-4 lg:pl-0 pl-7 lg:opacity-100 ${
-          isMenuOpen ? "opacity-100 top-[80px]" : "opacity-0 top-[-400px]"
-        } transition-all ease-in duration-200`}
+          isMenuOpen ? "opacity-100 top-[80px] bg-blue-800" : "opacity-0 top-[-400px] bg-bgColor"
+        } transition-all ease-in duration-300`}
       >
         <li className="mx-4 my-6 lg:my-0">
           <a href="#WhoAmI" className="hover:text-cyan-500 duration-500 ">QUI SUIS-JE</a>

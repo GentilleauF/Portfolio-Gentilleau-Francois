@@ -2,8 +2,8 @@ const WhoAmI = () => {
   return (
     <div className="flex flex-col mt-20 p-5 md:p-16 text-slate-200" id="WhoAmI">
       <h2 className=" text-center text-4xl font-semibold">Qui suis je?</h2>
-      <div className="flex flex-col md:flex-row">
-        <p className="  overflow-auto text-justify md:w-[70%] px-5 md:pr-20 py-10">
+      <div className="flex flex-col lg:flex-row">
+        <p className="  overflow-auto text-justify lg:w-[70%] px-5 md:pr-20 py-10">
           Bonjour et bienvenue sur mon portfolio ! Je m'appelle François Gentilleau, j'ai 28 ans et je suis passionné par le développement d'applications. Actuellement sur Toulouse, j'ai toujours été attiré par le monde de la technologie et de l'ingénierie.
           <br />
           <br />
@@ -20,9 +20,9 @@ const WhoAmI = () => {
           N'hésitez pas à explorer mon portfolio pour en savoir plus sur mes réalisations et à me contacter si vous souhaitez discuter d'une collaboration ou d'un projet passionnant !
         </p>
 
-        <img className="text-white" src="/public/icons/devWork.svg" alt="ero" />
+        <img className="text-white w-[80vw] lg:w-80 2xl:w-96" src="/public/icons/devWork.svg" alt="ero" />
       </div>
-    </div >
+    </div>
   );
 };
 
