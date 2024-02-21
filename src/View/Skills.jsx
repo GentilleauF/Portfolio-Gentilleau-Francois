@@ -37,7 +37,7 @@ const Skills = ({ skillsArray }) => {
           <div className="flex flex-row flex-wrap justify-between mt-16 px-10 xl:px-24 text-slate-100">
             {filteredSkills.map((item, i) => (
               <div key={i} className="flex flex-col pr-5 pb-10 justify-center items-center ">
-                <img className="w-14 md:w-24" src={'/public/icons/' + item.img} alt="error" />
+                <img className="w-14 md:w-24" src={'/icons/' + item.img} alt="error" />
                 <p className="font-medium pt-3">{item.name}</p>
               </div>
             ))}

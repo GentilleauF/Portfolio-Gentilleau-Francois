@@ -26,12 +26,17 @@ const Experience = () => {
         {experiences.map((experience) => (
           <div key={experience.id} className="bg-slate-600 rounded-sm p-4">
             <p>{experience.date}</p>
-            <p className="text-lg font-bold">{experience.title}</p>
+            <p className="text-xl my-3 font-bold text-blue-400">{experience.title}</p>
             <div className="flex flex-row items-center">
               <MapPinIcon className="w-5 mr-1" />
               <p>{experience.location}</p>
             </div>
-            <button className="mt-5">+ de détails</button>
+            <div className="mt-5 font-medium">Compétences :</div>
+            <ul className="pl-5">
+              {experience.competences.map(competence => (
+                <li className="list-disc mb-2">{competence}</li>
+              ) )}
+            </ul>
           </div>
         ))}
       </div>

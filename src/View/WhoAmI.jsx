@@ -20,7 +20,7 @@ const WhoAmI = () => {
           N'hésitez pas à explorer mon portfolio pour en savoir plus sur mes réalisations et à me contacter si vous souhaitez discuter d'une collaboration ou d'un projet passionnant !
         </p>
 
-        <img className="text-white w-[80vw] lg:w-80 2xl:w-96" src="/public/icons/devWork.svg" alt="ero" />
+        <img className="text-white w-[80vw] lg:w-80 2xl:w-96" src="/icons/images/devWork.svg" alt="ero" />
       </div>
     </div>
   );
