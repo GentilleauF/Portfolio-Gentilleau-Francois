@@ -11,9 +11,9 @@ const Popup = ({ title, description, image, closePopup, setclosePopup, link, com
 
             <p className="mb-10">{description}</p>
             <h3 className="mt-10 font-medium">COMPETENCES :</h3>
-            <ul className="pl-2 mb-20">
+            <ul className="pl-4 mb-20">
                 {competences.map((competence, i) => (
-                    <li key={i}>{competence}</li>
+                    <li className="list-disc" key={i}>{competence}</li>
                 ))}
 
             </ul>

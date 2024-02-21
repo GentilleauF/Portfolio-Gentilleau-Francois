@@ -47,7 +47,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={` font-medium lg:flex lg:items-center z-[1] lg:z-auto lg:static absolute w-full left-0 lg:w-auto lg:py-0 lg:space-x-10 py-4 lg:pl-0 pl-7 lg:opacity-100 ${isMenuOpen ? "opacity-100 top-[80px] bg-blue-800" : "opacity-0 top-[-400px] bg-bgColor"
+        className={` font-medium lg:flex lg:items-center z-[1] lg:z-auto lg:static absolute w-full left-0 lg:w-auto lg:py-0 lg:space-x-10 py-4 lg:pl-0 pl-7 lg:opacity-100 ${isMenuOpen ? "opacity-100 top-[80px] bg-slate-800" : "opacity-0 top-[-400px] bg-bgColor"
           } transition-all ease-in duration-300`}
       >
         <li className="mx-4 my-6 lg:my-0">

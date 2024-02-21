@@ -33,8 +33,8 @@ const Experience = () => {
             </div>
             <div className="mt-5 font-medium">Compétences :</div>
             <ul className="pl-5">
-              {experience.competences.map(competence => (
-                <li className="list-disc mb-2">{competence}</li>
+              {experience.competences.map((competence, i) => (
+                <li key={i} className="list-disc mb-2">{competence}</li>
               ) )}
             </ul>
           </div>
