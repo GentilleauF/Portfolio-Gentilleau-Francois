@@ -24,12 +24,12 @@ const Navbar = () => {
 
 
   return (
-    <nav className=" font-montserrat p-3 bg-bgColor text-white shadow lg:flex lg:items-center lg:justify-between lg:px-20">
+    <nav className=" min-h-[80px] font-montserrat p-3 bg-bgColor text-white shadow lg:flex lg:items-center lg:justify-between lg:px-20">
       <div className="flex justify-between items-center ">
         <a href="/">
-          <img className="w-14" src="/icons/Logo.png" alt="Logo" />
+          <img className="w-14 mx-5 rounded " src="/icons/Logo.png" alt="Logo" />
         </a>
-        <span className="text-xl pl-2 font-bold cursor-pointer">
+        <span className="text-xl pl-2  font-bold cursor-pointer">
           <a href="/">GENTILLEAU François</a>
         </span>
 

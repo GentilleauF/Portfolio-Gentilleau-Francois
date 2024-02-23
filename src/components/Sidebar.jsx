@@ -19,7 +19,7 @@ const SideBar = () => {
             />
           </a>
 
-          <a href="https://www.gmail.fr" target="_blank">
+          <a href={`mailto:${'francois.gentilleau@gmail.com'}`}target="_blank">
             <img
               className=" flex w-8"
               src="/icons/Gmail_svg.png"
